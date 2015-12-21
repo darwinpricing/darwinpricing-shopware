@@ -1,0 +1,179 @@
+<style>
+.dpHeader {
+    background: #1681d3;
+    background: url("data:image/svg+xml;charset=utf-8;base64,CiAgICA8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIg dmVyc2lvbj0iMS4xIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICAg ICAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkaWVudCIgeDE9IjAlIiB5MT0i MCUiIHgyPSIwJSIgeTI9IjEwMCUiPic8c3RvcCBvZmZzZXQ9IjAlIiBzdHls ZT0ic3RvcC1jb2xvcjojMmViNWY5O3N0b3Atb3BhY2l0eToxIiAvPicsICc8 c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiMxNjgxZDM7 c3RvcC1vcGFjaXR5OjEiIC8+JzwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDxy ZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3Jh ZGllbnQpIiAvPgogICAgPC9zdmc+CiAgICA=") center center repeat-x transparent;
+    margin: 1em 0;
+    padding: 0.2em 1em 0.2em 1.5em;
+    text-shadow: 1px 1px 0px #145c9a;
+    border-radius: 0 2em 2em 0;
+    color: #ffffff;
+}
+</style>
+
+<h1>Darwin Pricing – Die führende Geo-Pricing Engine jetzt auch auf Shopware!</h1>
+
+<p><b>
+Ob Sie Mode, Elektronik, Haushaltsgeräte oder Spielsachen verkaufen –
+mit unserer vollautomatisierten Geo-Pricing App können jetzt alle Online-Shops mit einer Umsatzsteigerung von +40% rechnen!
+</b></p>
+
+<h2 class="dpHeader"><b>Was ist eigentlich Geo-Pricing?</b></h2>
+
+<ul>
+<li>
+<b>Darwin Pricing identifiziert die Städte und Regionen wo Ihr E-Commerce schlechter abschneidet.</b>
+Sei es wegen der Konkurrenz vor Ort, oder weil das verfügbare Einkommen dort niedriger ist.
+</li>
+<li>
+<b>Darwin Pricing schaltet gezielt Rabatt-Gutscheine in diesen Regionen ein.</b>
+Geographisch differenziert wird der Impact verschiedener Gutscheincodes auf Konversionsrate, Umsatz und Profit ermittelt.
+</li>
+<li>
+<b>Darwin Pricing setzt in Ihrem Online-Shop das optimale Rabatt-Angebot in jeder Stadt ein.</b>
+Vollautomatisch und auf Profitmaximierung getrimmt!
+</li>
+</ul>
+
+<h2 class="dpHeader"><b>Welchen Impact kann ich erwarten?</b></h2>
+
+<p>Erfahrungswerte aus über 50.000 Online-Shops sprechen Bande:</p>
+
+<ul>
+<li>
+<b>Conversion Optimierung: +50% mehr Bestellungen</b>
+mit professionellen Exit-Intent-Pop-Ups, optimiert für Tablets und Smartphones.
+</li>
+<li>
+<b>Umsatzsteigerung: +40% mehr Umsatz</b>
+mit dem gezielten Aufbauen verkaufsschwachen Gebiete, ohne Umsatzeinbuße in verkaufsstarken Regionen.
+</li>
+<li>
+<b>Profitsteigerung: +30% mehr Profit</b>
+mit einer hocheffizienten Kampagnen-Optimierung, basierend auf Echtzeit-Datenanalyse mit künstlichen neuronalen Netzen.
+</li>
+</ul>
+
+<h2 class="dpHeader"><b>Wie funktionieren Exit-Intent-Pop-Ups?</b></h2>
+
+<p>
+Circa 95% aller Besucher verlassen Ihren Online-Shop, ohne zu kaufen.
+Manche gleich auf der Landingpage, andere erst, wenn der Warenkorb bereits voll ist.
+Durch eine raffinierte Analyse der Verhaltensmuster lässt sich ein Pop-Up-Gutschein just in dem Moment einschalten,
+wo Besucher Ihren Shop verlassen würden - was die Kaufentscheidung deutlich erleichtert.
+</p>
+
+<ul>
+<li>
+<b>Darwin Pricing analysiert Mausbewegungen</b> und schaltet Pop-Ups ein, bevor das Fenster oder der Tab geschlossen wird.
+</li>
+<li>
+<b>Darwin Pricing analysiert das Scrolling-Verhalten</b> und schaltet Pop-Ups ein, bevor Besucher mit Touch-Geräten wegnavigieren.
+</li>
+<li>
+<b>Darwin Pricing analysiert das Browsing-Verhalten</b> und schaltet Pop-Ups ein, wenn Besucher unentschlossen sind oder Preise gleichzeitig auf anderen Online-Shops vergleichen.
+</li>
+</ul>
+
+<h2 class="dpHeader"><b>Wie funktioniert das Geo-Targeting?</b></h2>
+
+<ul>
+<li>
+<b>Besucher Ihres Online-Shops werden anhand ihrer IP-Addresse lokalisiert.</b>
+Sie müssen weder Cookies akzeptieren noch die Ortungsfunktion ihres Web-Browsers aktivieren.
+</li>
+<li>
+<b>Darwin Pricing vertraut auf die IP-Intelligence-Dienste von MaxMind</b>
+und ist somit branchenführend bei der Genauigkeit von IP-Standortdaten.
+</li>
+<li>
+<b>Weltweit werden Besucher bis auf die Stadt-Ebene geortet.</b>
+Wenn Sie offline Läden oder Filialen betreiben, können Exklusionsräume für Online-Gutscheine eingerichtet werden.
+</li>
+</ul>
+
+<h2 class="dpHeader"><b>Kann ich das Design des Pop-Ups individuell anpassen?</b></h2>
+
+<ul>
+<li>
+<b>Sowohl das Design, die Inhalte und das Verhalten des Pop-Ups lassen sich vollständig an Ihren Online-Shop anpassen.</b>
+Dabei können Sie entweder Gestaltung und Umsetzung selbst übernehmen, oder uns das Projekt in Auftrag geben.
+</li>
+<li>
+<b>Standardmäßig funktioniert das Pop-Up nach dem Prinzip “Teilen gegen Gutschein”.</b>
+Ihre Besucher müssen erst Ihre Website auf sozialen Netzwerken posten, bevor sie den Gutschein erhalten.
+</li>
+<li>
+<b>Sehr beliebt ist auf die Variante “Newsletter-Abo gegen Gutschein”.</b>
+Ihre Besucher erhalten einen Gutschein, nachdem sie Ihren Newsletter abonniert haben.
+</li>
+</ul>
+
+<h2 class="dpHeader"><b>Was kostet Darwin Pricing?</b></h2>
+
+<ul>
+<li>
+<b>Die ersten 30 Tage sind kostenlos.</b>
+Sie gehen keinerlei Risiko ein und müssen keinen Vertrag kündigen, wenn Sie Darwin Pricing nach der kostenlosen Probe-Periode nicht weiternutzen möchten.
+</li>
+<li>
+<b>Unsere <a href="https://www.darwinpricing.com/pricing" target="_blank">Listenpreise</a> sind nach Umsatz gestaffelt.</b>
+Darwin Pricing können Sie entweder im Monats- oder Jahres-Abo nutzen, oder auch eine unbefristete Lizenz einmalig erwerben.
+</li>
+<li>
+<b>Die Steigerung von Konversionsrate, Umsatz und Profit wird wissenschaftlich ermittelt</b>
+mit einem kostenlosen A/B Split-Test während der Probe-Periode. Preise werden anhand von diesen Ergebnissen individuell vereinbart.
+</li>
+</ul>
+
+<h2 class="dpHeader"><b>Wie installiere ich Darwin Pricing?</b></h2>
+
+<p>Darwin Pricing können Sie selbst auf Ihrem Online-Shop in 5 Minuten einrichten – ganz ohne technische Kenntnisse:</p>
+
+<ul>
+<li>
+<b>Zunächst erstellen Sie einen <a href="https://admin.darwinpricing.com/sign-up" target="_blank">kostenlosen Darwin Pricing-Account</a></b>,
+um Ihren Online-Shop zu registrieren. Es werden Ihnen ein API-Server, eine Client-ID und ein geheimer Client-Schlüssel zugewiesen.
+</li>
+<li>
+<b>Dann tragen Sie diese Daten bei der Plugin-Konfiguration in Shopware ein.</b>
+Nach Aktivierung des Plugins werden uns zwecks Datenanalyse alle Bestellungen auf Ihrem Shop in Echtzeit zugeschickt.
+</li>
+<li>
+<b>Erstellen Sie dann verschiedene Gutscheine in Shopware.</b>
+Das machen Sie bequem im Menü “Marketing > Gutscheine”.
+Erstellen Sie zum Beispiel drei Gutscheincodes “HAPPY10”, “HAPPY15” und “HAPPY20” für 10%, 15% und 20% Rabatt auf die gesamte Bestellung.
+</li>
+<li>
+<b>Importieren Sie diese Gutscheincodes in Darwin Pricing.</b>
+Das Pop-Up wird dann auf Ihrem Shop aktiviert,
+und das optimale Geo-Targeting für jeden Gutschein wird automatisch ermittelt.
+Selbstverständlich können Sie Ihre Geo-Targeting-Strategie auch manuell definieren.
+</li>
+<li>
+<b>Kontaktieren Sie <a href="mailto:support@darwinpricing.com">support@darwinpricing.com</a></b>,
+wenn Sie das Pop-Up individuell gestalten möchten und dabei hilfe brauchen sollten.
+</li>
+<li>
+<b>Tragen Sie die Profit-Marge in Darwin Pricing ein</b>,
+welche Ihre Listenpreise (UVP) im Durchschnitt beinhalten.
+Anhand dessen wird der erzielte Profit bei verschiedenen Gutschein-Kampagnen ermittelt.
+</li>
+</ul>
+
+<h2 class="dpHeader"><b>Wie verläuft die Probe-Periode?</b></h2>
+
+<ul>
+<li>
+<b>Starten Sie erst die kostenlose Probe-Periode in Darwin Pricing</b>,
+wenn alles nach Ihren Wünschen eingerichtet ist.
+</li>
+<li>
+<b>Regelmäßig erhalten Sie detaillierte Sales-Reports im Excel-Format.</b>
+So können Sie die mit Darwin Pricing erzielten Verkaufszahlen transparent vergleichen
+mit einer Kontroll-Gruppe, für welche Darwin Pricing deaktiviert ist.
+</li>
+<li>
+<b>Am Ende der Probe-Periode besprechen Sie die Ergebnisse mit Ihrem Ansprechpartner</b>,
+und vereinbaren einen individuellen Preis für die weitere Nutzung von Darwin Pricing.
+</li>
+</ul>

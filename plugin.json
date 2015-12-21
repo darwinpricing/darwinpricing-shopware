@@ -1,0 +1,25 @@
+{
+    "author": "Darwin Pricing",
+    "changelog": {
+        "de": {
+            "1.0.0": "Erste Version des Plugins"
+        },
+        "en": {
+            "1.0.0": "First version of the plugin"
+        }
+    },
+    "compatibility": {
+        "minimumVersion": "4.2.3",
+        "maximumVersion": null,
+        "blacklist": [
+        ]
+    },
+    "copyright": "Copyright © 2015, Darwin Pricing",
+    "currentVersion": "1.0.0",
+    "label": {
+        "de": "Darwin Pricing",
+        "en": "Darwin Pricing"
+    },
+    "license": "AGPL 3.0",
+    "link": "https://www.darwinpricing.com"
+}
