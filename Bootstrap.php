@@ -139,12 +139,12 @@ class Shopware_Plugins_Frontend_DarwinPricing_Bootstrap extends Shopware_Compone
         $config = $this->Config();
         $serverUrl = rtrim($config->serverUrl, '/');
         $apiUrl = $serverUrl . $path;
-        $parameterList = array('site-id' => $config->clientId);
+        $parameterList = array('platform' => 'shopware-' . Shopware::VERSION, 'site-id' => $config->clientId);
         if (null !== $visitorIp) {
             $parameterList['hash'] = $config->clientSecret;
             $parameterList['visitor-ip'] = $visitorIp;
         }
-        $apiUrl .= '?' . http_build_query($parameterList);
+        $apiUrl .= '?' . http_build_query($parameterList, '', '&');
         return $apiUrl;
     }
 
