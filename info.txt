@@ -1,12 +1,12 @@
 <style>
-.dpHeader {
-    background: #1681d3;
-    background: url("data:image/svg+xml;charset=utf-8;base64,CiAgICA8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIg dmVyc2lvbj0iMS4xIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICAg ICAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkaWVudCIgeDE9IjAlIiB5MT0i MCUiIHgyPSIwJSIgeTI9IjEwMCUiPic8c3RvcCBvZmZzZXQ9IjAlIiBzdHls ZT0ic3RvcC1jb2xvcjojMmViNWY5O3N0b3Atb3BhY2l0eToxIiAvPicsICc8 c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiMxNjgxZDM7 c3RvcC1vcGFjaXR5OjEiIC8+JzwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDxy ZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3Jh ZGllbnQpIiAvPgogICAgPC9zdmc+CiAgICA=") center center repeat-x transparent;
-    margin: 1em 0;
-    padding: 0.2em 1em 0.2em 1.5em;
-    text-shadow: 1px 1px 0px #145c9a;
-    border-radius: 0 2em 2em 0;
-    color: #ffffff;
+h2.dpHeader {
+    background: #1681d3 !important;
+    background: url("data:image/svg+xml;charset=utf-8;base64,CiAgICA8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIg dmVyc2lvbj0iMS4xIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICAg ICAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkaWVudCIgeDE9IjAlIiB5MT0i MCUiIHgyPSIwJSIgeTI9IjEwMCUiPic8c3RvcCBvZmZzZXQ9IjAlIiBzdHls ZT0ic3RvcC1jb2xvcjojMmViNWY5O3N0b3Atb3BhY2l0eToxIiAvPicsICc8 c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiMxNjgxZDM7 c3RvcC1vcGFjaXR5OjEiIC8+JzwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDxy ZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3Jh ZGllbnQpIiAvPgogICAgPC9zdmc+CiAgICA=") center center repeat-x transparent !important;
+    margin: 1em 0 !important;
+    padding: 0.5em 1.5em !important;
+    text-shadow: 1px 1px 0px #145c9a !important;
+    border-radius: 0 2em 2em 0 !important;
+    color: #ffffff !important;
 }
 </style>
 
