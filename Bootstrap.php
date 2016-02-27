@@ -83,6 +83,12 @@ class Shopware_Plugins_Frontend_DarwinPricing_Bootstrap extends Shopware_Compone
             'value' => null,
             'scope' => \Shopware\Models\Config\Element::SCOPE_SHOP
         ));
+        $form->setElement('checkbox', 'disabled', array(
+            'label' => 'Plugin deaktivieren',
+            'description' => 'Darwin Pricing auf diesem Subshop deaktivieren',
+            'value' => false,
+            'scope' => \Shopware\Models\Config\Element::SCOPE_SHOP
+        ));
         $form->setElement('button', 'darwinPricingSignUp', array(
             'label' => '<b>Jetzt kostenlosen Darwin Pricing-Account erhalten</b>',
             'handler' => 'function() { window.open("https://admin.darwinpricing.com/sign-up")}',
@@ -166,6 +172,10 @@ class Shopware_Plugins_Frontend_DarwinPricing_Bootstrap extends Shopware_Compone
                     'label' => 'Client Secret',
                     'description' => 'The client secret for your website',
                 ),
+                'disabled' => array(
+                    'label' => 'Disable plugin',
+                    'description' => 'Disable Darwin Pricing on this subshop',
+                ),
                 'darwinPricingSignUp' => array(
                     'label' => '<b>Get your free Darwin Pricing account</b>',
                 ),
@@ -208,7 +218,7 @@ class Shopware_Plugins_Frontend_DarwinPricing_Bootstrap extends Shopware_Compone
      */
     protected function isActive() {
         $config = $this->Config();
-        return (!empty($config->serverUrl) && !empty($config->clientId) && !empty($config->clientSecret));
+        return (empty($config->disabled) && !empty($config->serverUrl) && !empty($config->clientId) && !empty($config->clientSecret));
     }
 
     /**

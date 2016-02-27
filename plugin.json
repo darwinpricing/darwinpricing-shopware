@@ -2,10 +2,12 @@
     "author": "Darwin Pricing",
     "changelog": {
         "de": {
+            "1.0.2": "Plugin-Aktivierung auf Subshop-Ebene",
             "1.0.1": "URL-Escaping-Fehler behoben",
             "1.0.0": "Erste Version des Plugins"
         },
         "en": {
+            "1.0.2": "Plugin activation on a subshop basis",
             "1.0.1": "Fixed URL escaping issue",
             "1.0.0": "First version of the plugin"
         }
@@ -17,7 +19,7 @@
         ]
     },
     "copyright": "Copyright © 2015, Darwin Pricing",
-    "currentVersion": "1.0.1",
+    "currentVersion": "1.0.2",
     "label": {
         "de": "Darwin Pricing",
         "en": "Darwin Pricing"
