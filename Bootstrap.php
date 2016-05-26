@@ -104,24 +104,49 @@ class Shopware_Plugins_Frontend_DarwinPricing_Bootstrap extends Shopware_Compone
     }
 
     public function onPostDispatch(Enlight_Controller_ActionEventArgs $arguments) {
-        $controller = $arguments->getSubject();
-        $request = $controller->Request();
-        $response = $controller->Response();
-        $view = $controller->View();
-        if (!$request->isDispatched() || $response->isException() || !$view->hasTemplate() || 'frontend' !== $request->getModuleName() || !$this->isActive()) {
-            return;
-        }
-        if ('checkout' === $request->getControllerName() && 'finish' === $request->getActionName()) {
-            $sOrderNumber = $view->getAssign('sOrderNumber');
-            $visitorIp = $request->getClientIp(true);
-            $this->trackOrder($sOrderNumber, $visitorIp);
-        } else {
-            $this->loadWidget($view);
+        try {
+            $controller = $arguments->getSubject();
+            $request = $controller->Request();
+            $response = $controller->Response();
+            $view = $controller->View();
+            if (!$request->isDispatched() || $response->isException() || !$view->hasTemplate() || 'frontend' !== $request->getModuleName() || !$this->isActive()) {
+                return;
+            }
+            if ('checkout' === $request->getControllerName() && 'finish' === $request->getActionName()) {
+                $sOrderNumber = $view->getAssign('sOrderNumber');
+                $visitorIp = $request->getClientIp(true);
+                $this->trackOrder($sOrderNumber, $visitorIp);
+            } else {
+                $this->loadWidget($view);
+            }
+        } catch (\Exception $exception) {
+            
         }
     }
 
     public function uninstall() {
         return array('success' => true, 'invalidateCache' => array('frontend'));
+    }
+
+    /**
+     * @param array $sOrder
+     * @return array
+     */
+    protected function addUnitCosts($sOrder) {
+        if (is_array($sOrder) && isset($sOrder['details']) && is_array($sOrder['details'])) {
+            foreach ($sOrder['details'] as &$item) {
+                if (is_array($item) && isset($item['articleId'])) {
+                    $sArticleDetail = $this->getArticleDetail($item['articleId']);
+                    if (null !== $sArticleDetail) {
+                        $unitCost = $this->getUnitCost($sArticleDetail);
+                        if ($unitCost > 0) {
+                            $item['unitCost'] = $unitCost;
+                        }
+                    }
+                }
+            }
+        }
+        return $sOrder;
     }
 
     /**
@@ -155,6 +180,33 @@ class Shopware_Plugins_Frontend_DarwinPricing_Bootstrap extends Shopware_Compone
     }
 
     /**
+     * @param int $sArticleId
+     * @return \Shopware\Models\Article\Article|null
+     */
+    protected function getArticle($sArticleId) {
+        /** @var \Shopware\Components\Api\Resource\Article $resource */
+        $resource = \Shopware\Components\Api\Manager::getResource('article');
+        $resource->setResultMode(\Shopware\Components\Api\Resource\Resource::HYDRATE_OBJECT);
+        try {
+            return $resource->getOne($sArticleId);
+        } catch (\Exception $exception) {
+            return null;
+        }
+    }
+
+    /**
+     * @param int $sArticleId
+     * @return \Shopware\Models\Article\Detail|null
+     */
+    protected function getArticleDetail($sArticleId) {
+        $sArticle = $this->getArticle($sArticleId);
+        if (null === $sArticle) {
+            return null;
+        }
+        return $sArticle->getMainDetail();
+    }
+
+    /**
      * @return array
      */
     protected function getFormTranslations() {
@@ -185,12 +237,16 @@ class Shopware_Plugins_Frontend_DarwinPricing_Bootstrap extends Shopware_Compone
 
     /**
      * @param string $sOrderNumber
-     * @return array
+     * @return array|null
      */
     protected function getOrder($sOrderNumber) {
-        /** @var Shopware\Components\Api\Resource\Order $resource */
+        /** @var \Shopware\Components\Api\Resource\Order $resource */
         $resource = \Shopware\Components\Api\Manager::getResource('order');
-        return $resource->getOneByNumber($sOrderNumber);
+        try {
+            return $resource->getOneByNumber($sOrderNumber);
+        } catch (\Exception $exception) {
+            return null;
+        }
     }
 
     /**
@@ -211,6 +267,29 @@ class Shopware_Plugins_Frontend_DarwinPricing_Bootstrap extends Shopware_Compone
             throw new Exception('Plugin ' . $key . ' not found');
         }
         return (string) $pluginInfo[$key][$language];
+    }
+
+    /**
+     * @param \Shopware\Models\Article\Detail $sArticleDetail
+     * @return float
+     */
+    protected function getUnitCost($sArticleDetail) {
+        if (method_exists($sArticleDetail, 'getPurchasePrice')) {
+            return $sArticleDetail->getPurchasePrice();
+        }
+        if (method_exists($sArticleDetail, 'getPrices')) {
+            $sPrices = $sArticleDetail->getPrices();
+            /** @var \Shopware\Models\Article\Price $sPrice */
+            foreach ($sPrices as $sPrice) {
+                if (method_exists($sPrice, 'getBasePrice')) {
+                    $unitCost = $sPrice->getBasePrice();
+                    if ($unitCost > 0) {
+                        return $unitCost;
+                    }
+                }
+            }
+        }
+        return 0.;
     }
 
     /**
@@ -276,8 +355,12 @@ class Shopware_Plugins_Frontend_DarwinPricing_Bootstrap extends Shopware_Compone
      */
     protected function trackOrder($sOrderNumber, $visitorIp) {
         $url = $this->getApiUrl('/shopware/webhook-order', $visitorIp);
-        $order = $this->getOrder($sOrderNumber);
-        $body = json_encode($order);
+        $sOrder = $this->getOrder($sOrderNumber);
+        if (null === $sOrder) {
+            return;
+        }
+        $sOrder = $this->addUnitCosts($sOrder);
+        $body = json_encode($sOrder);
         $this->webhook($url, $body);
     }
 

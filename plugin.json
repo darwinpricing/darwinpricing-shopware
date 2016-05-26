@@ -2,11 +2,13 @@
     "author": "Darwin Pricing",
     "changelog": {
         "de": {
+            "1.0.3": "Einkaufspreise in Echtzeit geupdatet",
             "1.0.2": "Plugin-Aktivierung auf Subshop-Ebene",
             "1.0.1": "URL-Escaping-Fehler behoben",
             "1.0.0": "Erste Version des Plugins"
         },
         "en": {
+            "1.0.3": "Real-time update of the cost of goods sold",
             "1.0.2": "Plugin activation on a subshop basis",
             "1.0.1": "Fixed URL escaping issue",
             "1.0.0": "First version of the plugin"
@@ -18,8 +20,8 @@
         "blacklist": [
         ]
     },
-    "copyright": "Copyright © 2015, Darwin Pricing",
-    "currentVersion": "1.0.2",
+    "copyright": "Copyright © 2016, Darwin Pricing",
+    "currentVersion": "1.0.3",
     "label": {
         "de": "Darwin Pricing",
         "en": "Darwin Pricing"
